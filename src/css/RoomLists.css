@@ -1,0 +1,16 @@
+.Room {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid gray;
+    margin-right: 10px;
+  }
+  
+  .Room img {
+    width: 250px;
+    height: 200px;
+  }
+  
+  .RoomLists {
+    display: flex;
+    flex-flow: row;
+  }
