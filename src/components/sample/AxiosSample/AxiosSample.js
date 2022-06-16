@@ -6,9 +6,9 @@ function AxiosSample() {
     const [data, setData] = useState("");
 
     const handleGetData = () => {
-        axios.get('https://jsonplaceholder.typicode.com/todos/1')
+        axios.get('https://cors-anywhere.herokuapp.com/https://kosis.kr/openapi/statisticsData.do?method=getList&apiKey=MWQ3NDIwZDIwMWIxNDZlMjRkNzg5ZTMwZDdmMzM0ZjU=&format=json&jsonVD=Y&userStatsId=minho7192/101/DT_1B81A21/2/1/20220610134055_1&prdSe=Y&startPrdDe=1993&endPrdDe=2020')
             .then((res) => {
-                setData(res.data.title); 
+                setData(JSON.stringify(res.data)); 
             })
             .catch((e) => { alert(e.message) })
     }
